@@ -4,7 +4,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import UserListComponent from "./pages/user-list";
+import UserListComponent from "./features/users/usersList";
 
 function RouterOutlet() {
   return (
