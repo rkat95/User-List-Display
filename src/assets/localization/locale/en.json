@@ -9,6 +9,8 @@
     "city": "City",
     "company": "Company",
     "view_details": "View Details",
-    "address": "Address"
+    "address": "Address",
+    "users_display_title": "Users List",
+    "users_display_subtitle": "Display user information as grid & list view"
   }
 }

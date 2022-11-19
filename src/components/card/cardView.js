@@ -24,7 +24,7 @@ export default function CardView(props) {
             <div className="icon-wrapper">
               <BadgeIcon className="info-icon" />
             </div>
-            <div class="text-info">
+            <div className="text-info">
               <Typography className="label" color="text.secondary">
                 {t("name")}
               </Typography>
