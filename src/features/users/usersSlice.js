@@ -11,7 +11,6 @@ export const getUsersList = createAsyncThunk(
   "userList/getUsers",
   async (amount) => {
     const response = await getUsers();
-    console.log(response);
     return response;
   }
 );

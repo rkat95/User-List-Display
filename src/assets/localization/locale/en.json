@@ -2,6 +2,11 @@
   "translation": {
     "table_view": "Table View",
     "cards_view": "Cards View",
-    "blog_view": "Blog View"
+    "name": "Name",
+    "username": "Username",
+    "email": "Email",
+    "phone": "Phone #",
+    "city": "City",
+    "company": "Company"
   }
 }

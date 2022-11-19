@@ -2,6 +2,11 @@
   "translation": {
     "table_view": "Table View FR",
     "cards_view": "Cards View FR",
-    "blog_view": "Blog View FR"
+    "name": "Nom",
+    "username": "Nom d'utilisateur",
+    "email": "Email",
+    "phone": "Numéro de Téléphone",
+    "city": "Ville",
+    "company": "Entreprise"
   }
 }

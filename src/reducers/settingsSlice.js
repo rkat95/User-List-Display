@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   language: "",
-  viewType: "card",
+  viewType: "cardView",
 };
 
 export const settingsSlice = createSlice({
@@ -10,7 +10,6 @@ export const settingsSlice = createSlice({
   initialState,
   reducers: {
     setViewType: (state, action) => {
-      console.log("action", action);
       state.viewType = action.payload;
     },
   },
