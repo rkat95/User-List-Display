@@ -7,13 +7,10 @@ const initialState = {
   error: null,
 };
 
-export const getUsersList = createAsyncThunk(
-  "userList/getUsers",
-  async (amount) => {
-    const response = await getUsers();
-    return response;
-  }
-);
+export const getUsersList = createAsyncThunk("userList/getUsers", async () => {
+  const response = await getUsers();
+  return response;
+});
 
 export const usersSlice = createSlice({
   name: "users",
