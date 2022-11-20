@@ -1,9 +1,11 @@
+@import "../../assets/theme.scss";
+
 .loader-wrapper {
   display: flex;
   justify-content: center;
   padding: 2em;
 
   .loader-circle {
-    color: #aeb8c4 !important;
+    color: $secondary-theme-color !important;
   }
 }

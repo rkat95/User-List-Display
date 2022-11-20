@@ -26,21 +26,19 @@ export function UserListComponent() {
 
   useEffect(() => {
     if (!data?.length) {
-      fetchUsers();
+      dispatch(getUsersList());
     }
-  }, [dispatch]);
+  }, [dispatch, data.length]);
 
   const fetchUsers = () => {
     dispatch(getUsersList());
   };
   const goToUserDetails = (user) => {
-    console.log("here");
     dispatch(setSelectedUser(user));
     navigate("/user-details");
   };
 
   const setHeaderIcon = (view) => {
-    console.log("here", view);
     dispatch(setViewType(view));
   };
 
@@ -53,8 +51,8 @@ export function UserListComponent() {
         <TableView rowData={data.slice()} tableConfig={userListTableConfig} />
       ) : (
         <Grid container spacing={3}>
-          {data.map((user) => (
-            <Grid item xs={12} sm={6} md={4} lg={3} xl={3}>
+          {data.map((user, index) => (
+            <Grid key={index} item xs={12} sm={6} md={4} lg={3} xl={3}>
               <div
                 className="card-wrapper"
                 onClick={() => goToUserDetails(user)}

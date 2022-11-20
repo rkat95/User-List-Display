@@ -24,8 +24,10 @@ export default function InfoDisplay(props) {
           ""
         )}
         {value ? <Typography className="value">{value}</Typography> : ""}
-        {subValues?.map((val) => (
-          <Typography className="sub-value">{val}</Typography>
+        {subValues?.map((val, index) => (
+          <Typography key={index} className="sub-value">
+            {val}
+          </Typography>
         ))}
       </div>
     </div>

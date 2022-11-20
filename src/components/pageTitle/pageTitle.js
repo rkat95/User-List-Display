@@ -23,10 +23,11 @@ export default function PageTitle(props) {
           <div className="page-subtitle">{t(subtitle, subtitleParams)}</div>
         </div>
         <div className="icons-container">
-          {icons.map((icon) => {
+          {icons.map((icon, index) => {
             const Icon = icon.icon;
             return (
               <Icon
+                key={index}
                 className="action-icon"
                 onClick={(event) => {
                   icon.clickFn(icon.clickParam);

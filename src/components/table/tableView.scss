@@ -1,0 +1,15 @@
+@import "../../assets/theme.scss";
+
+.ag-header {
+  background-color: $secondary-theme-color;
+}
+
+.ag-pivot-off .ag-header-cell-label {
+  color: $light-txt-color;
+}
+
+.ag-row-hover {
+  /* putting in !important so it overrides the theme's styling as it hovers the row also */
+  background-color: $primary-theme-color !important;
+  color: $light-txt-color;
+}

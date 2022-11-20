@@ -1,3 +1,5 @@
+@import "../../assets/theme.scss";
+
 .lang-item {
   display: flex;
   justify-content: center;
@@ -8,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: $light-txt-color;
 }
 
 .flag {
@@ -18,10 +20,10 @@
 }
 
 .css-hfutr2-MuiSvgIcon-root-MuiSelect-icon {
-  color: white !important;
+  color: $light-txt-color !important;
 }
 .css-bpeome-MuiSvgIcon-root-MuiSelect-icon {
-  color: white !important;
+  color: $light-txt-color !important;
 }
 
 .css-1d3z3hw-MuiOutlinedInput-notchedOutline {

@@ -1,6 +1,6 @@
 import InfoDisplay from "../../components/infoDisplay/infoDisplay";
 import PageTitle from "../../components/pageTitle/pageTitle";
-import LocationOnIcon from "@mui/icons-material/LocationOn";
+import { Button, CardActions } from "@mui/material";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
@@ -23,6 +23,10 @@ export default function UserDetails() {
       navigate("/user-list");
     }
   });
+
+  const goBack = () => {
+    navigate("/user-list");
+  };
 
   return (
     <Box className="main-container">
@@ -185,6 +189,11 @@ export default function UserDetails() {
               </div>
             </div>
           </CardContent>
+          <CardActions>
+            <Button size="small" color="primary" onClick={goBack}>
+              {t("go_back")}
+            </Button>
+          </CardActions>
         </Card>
       </Grid>
     </Box>

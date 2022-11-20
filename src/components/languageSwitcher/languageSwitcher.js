@@ -31,10 +31,10 @@ export default function LanguageSwitcher(props) {
           value={selectedLanguage}
           onChange={handleChange}
         >
-          {languages.map((lang) => {
+          {languages.map((lang, index) => {
             const Flag = lang.flag;
             return (
-              <MenuItem value={lang.code} className="lang-item">
+              <MenuItem key={index} value={lang.code} className="lang-item">
                 <Flag className="flag" />
                 {lang.label}
               </MenuItem>

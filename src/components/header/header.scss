@@ -6,8 +6,18 @@
   padding: 10px 40px;
   display: flex;
   justify-content: space-between;
-  .logo {
-    width: 60px;
+  .left-container {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    .logo {
+      width: 60px;
+    }
+    .header-title {
+      font-size: 25px;
+      color: $light-txt-color;
+    }
   }
 
   .menu-items-container {

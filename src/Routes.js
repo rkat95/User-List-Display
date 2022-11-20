@@ -14,7 +14,7 @@ function RouterOutlet() {
         <Route exact path="/" element={<Navigate to="/user-list" />} />
         <Route exact path="/user-list" element={<UserListComponent />} />
         <Route exact path="/user-details" element={<UserDetails />} />
-        <Route element={<Navigate to="/user-list" />} />
+        <Route path="*" element={<Navigate to="/user-list" />} />
       </Routes>
     </Router>
   );

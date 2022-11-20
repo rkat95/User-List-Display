@@ -9,3 +9,5 @@ export const languages = [
   { code: "en", label: "English", flag: GB },
   { code: "fr", label: "Français", flag: FR },
 ];
+
+export const baseURL = "https://jsonplaceholder.typicode.com";
