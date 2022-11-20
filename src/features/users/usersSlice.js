@@ -32,7 +32,7 @@ export const usersSlice = createSlice({
     builder.addCase(getUsersList.rejected, (state, action) => {
       if (state.status === "pending") {
         state.status = "idle";
-        state.error = "Error occured"; //TODO localize error message
+        state.error = "failed_fetch_data"; //TODO localize error message
       }
     });
   },

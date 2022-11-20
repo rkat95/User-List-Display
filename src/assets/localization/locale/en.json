@@ -11,6 +11,7 @@
     "view_details": "View Details",
     "address": "Address",
     "users_display_title": "Users List",
-    "users_display_subtitle": "Display user information as grid & list view"
+    "users_display_subtitle": "Display user information as grid & list view",
+    "failed_fetch_data": "Failed to fetch data please try again!"
   }
 }
