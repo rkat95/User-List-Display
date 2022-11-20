@@ -9,7 +9,12 @@ export default function PageTitle(props) {
   const { t } = useTranslation();
   const dispatch = useDispatch();
 
-  const { title = "", subtitle = "", icons = [] } = props.data;
+  const {
+    title = "",
+    subtitle = "",
+    icons = [],
+    subtitleParams = {},
+  } = props.data;
 
   const handleIconClick = (view) => {
     dispatch(setViewType(view));
@@ -20,7 +25,7 @@ export default function PageTitle(props) {
       <div className="top-container">
         <div className="title-container">
           <div className="page-title">{t(title)}</div>
-          <div className="page-subtitle">{t(subtitle)}</div>
+          <div className="page-subtitle">{t(subtitle, subtitleParams)}</div>
         </div>
         <div className="icons-container">
           {icons.map((icon) => {

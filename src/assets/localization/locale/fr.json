@@ -12,6 +12,17 @@
     "address": "Address",
     "users_display_title": "Users List",
     "users_display_subtitle": "Display user information as grid & list view",
-    "failed_fetch_data": "Failed to fetch data please try again!"
+    "failed_fetch_data": "Failed to fetch data please try again!",
+    "users_details_title": "User Details",
+    "users_details_subtitle": "View details for {{username}}",
+    "personal_info": "Personal Info",
+    "street": "Street",
+    "suite": "Suite",
+    "zipcode": "Zip Code",
+    "view_location": "View Location On Map",
+    "company_info": "Company Info",
+    "catch_phrase": "Catch Phrase",
+    "bs": "Business",
+    "website": "Website"
   }
 }

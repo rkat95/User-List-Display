@@ -1,0 +1,19 @@
+.card-container {
+  width: 100%;
+  max-width: unset !important;
+  .section {
+    .section-title {
+      margin-top: 16px;
+    }
+    .section-content {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .section-item {
+        width: 50%;
+        min-width: 200px;
+      }
+    }
+  }
+}

@@ -1,5 +1,6 @@
 import { Button, CardActionArea, CardActions } from "@mui/material";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
+import InfoDisplay from "../infoDisplay/infoDisplay";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import BadgeIcon from "@mui/icons-material/Badge";
@@ -7,7 +8,7 @@ import WorkIcon from "@mui/icons-material/Work";
 import { useTranslation } from "react-i18next";
 import Divider from "@mui/material/Divider";
 import Card from "@mui/material/Card";
-import * as React from "react";
+import React from "react";
 import "./cardView.scss";
 
 export default function CardView(props) {
@@ -20,48 +21,27 @@ export default function CardView(props) {
           <Typography gutterBottom variant="h5" component="div">
             {data.username}
           </Typography>
-          <div className="info-item">
-            <div className="icon-wrapper">
-              <BadgeIcon className="info-icon" />
-            </div>
-            <div className="text-info">
-              <Typography className="label" color="text.secondary">
-                {t("name")}
-              </Typography>
-              <Typography className="value">{data.name}</Typography>
-            </div>
-          </div>
+          <InfoDisplay
+            data={{ label: "name", value: data.name, Icon: BadgeIcon }}
+          />
 
           <Divider />
-          <div className="info-item">
-            <div className="icon-wrapper">
-              <LocationOnIcon className="info-icon" />
-            </div>
-            <div className="text-info">
-              <Typography className="label" color="text.secondary">
-                {t("address")}
-              </Typography>
-              <Typography className="value">{data.address?.city}</Typography>
-              <Typography className="sub-value">
-                {data.address?.street}
-              </Typography>
-              <Typography className="sub-value">
-                {data.address?.zipcode}
-              </Typography>
-            </div>
-          </div>
+          <InfoDisplay
+            data={{
+              label: "address",
+              value: data.address.city,
+              Icon: LocationOnIcon,
+              subValues: [data.address.street, data.address.zipcode],
+            }}
+          />
           <Divider />
-          <div className="info-item">
-            <div className="icon-wrapper">
-              <WorkIcon className="info-icon" />
-            </div>
-            <div className="text-item">
-              <Typography className="label" color="text.secondary">
-                {t("company")}
-              </Typography>
-              <Typography className="value">{data.company?.name}</Typography>
-            </div>
-          </div>
+          <InfoDisplay
+            data={{
+              label: "company",
+              value: data.company?.name,
+              Icon: WorkIcon,
+            }}
+          />
         </CardContent>
       </CardActionArea>
       <CardActions>

@@ -1,0 +1,41 @@
+@import "../../assets/theme";
+
+.info-item {
+  margin: 0.6em 0;
+  display: flex;
+
+  .icon-wrapper {
+    border-radius: 50%;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $primary-theme-color;
+    margin-top: 4px;
+    .info-icon {
+      height: 17px;
+      color: $light-txt-color;
+    }
+  }
+
+  .text-info {
+    .label {
+      font-size: 14px !important;
+    }
+
+    .value {
+      font-size: 16px;
+    }
+
+    .sub-value {
+      font-size: 14px;
+    }
+  }
+}
+
+.center-items {
+  align-items: center;
+}
