@@ -25,6 +25,8 @@
     "bs": "Business",
     "website": "Website",
     "go_back": "Go Back",
-    "management_system": "Management System"
+    "management_system": "Management System",
+    "location_dialog_title": "Location on Map",
+    "location_dialog_subtitle": "The map doesn't show a marker because it is missing an API key :)"
   }
 }

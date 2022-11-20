@@ -1,12 +1,10 @@
 import { useTranslation } from "react-i18next";
 import { Divider } from "@mui/material";
-import { useDispatch } from "react-redux";
 import React from "react";
 import "./pageTitle.scss";
 
 export default function PageTitle(props) {
   const { t } = useTranslation();
-  const dispatch = useDispatch();
 
   const {
     title = "",

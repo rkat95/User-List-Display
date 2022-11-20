@@ -1,6 +1,7 @@
 import InfoDisplay from "../../components/infoDisplay/infoDisplay";
 import PageTitle from "../../components/pageTitle/pageTitle";
 import { Button, CardActions } from "@mui/material";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CardContent from "@mui/material/CardContent";
 import Typography from "@mui/material/Typography";
 import { useTranslation } from "react-i18next";
@@ -10,13 +11,15 @@ import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import "./userDetails.scss";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import DialogDisplay from "../../components/dialogDisplay/dialogDisplay";
 
 export default function UserDetails() {
   const { selectedUser } = useSelector((state) => state.users) || {};
   const navigate = useNavigate();
   const { t } = useTranslation();
+  const [showLocationDialog, setLocationDialog] = useState(false);
 
   useEffect(() => {
     if (!Object.keys(selectedUser)?.length) {
@@ -26,6 +29,10 @@ export default function UserDetails() {
 
   const goBack = () => {
     navigate("/user-list");
+  };
+
+  const handleDialogClose = () => {
+    setLocationDialog(false);
   };
 
   return (
@@ -129,7 +136,12 @@ export default function UserDetails() {
                     }}
                   />
                 </div>
-                {/* <div className="section-item">
+                <div
+                  className="section-item clickable-item"
+                  onClick={() => {
+                    setLocationDialog(true);
+                  }}
+                >
                   {" "}
                   <InfoDisplay
                     data={{
@@ -137,7 +149,7 @@ export default function UserDetails() {
                       Icon: LocationOnIcon,
                     }}
                   />
-                </div> */}
+                </div>
               </div>
             </div>
             <Divider />
@@ -177,7 +189,7 @@ export default function UserDetails() {
                     }}
                   />
                 </div>
-                <div className="section-item">
+                <div className="section-item ">
                   {" "}
                   <InfoDisplay
                     data={{
@@ -188,6 +200,13 @@ export default function UserDetails() {
                 </div>
               </div>
             </div>
+
+            <DialogDisplay
+              open={showLocationDialog}
+              lat={selectedUser?.geo?.lat}
+              lon={selectedUser?.geo?.lng}
+              onCloseFn={handleDialogClose}
+            />
           </CardContent>
           <CardActions>
             <Button size="small" color="primary" onClick={goBack}>

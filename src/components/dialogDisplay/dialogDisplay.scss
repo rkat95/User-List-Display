@@ -1,0 +1,16 @@
+.map-display {
+  height: 400px;
+}
+
+.dialog-title-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .close-dialog {
+    cursor: pointer;
+  }
+}
+.sub-title {
+  margin-bottom: 24px;
+}

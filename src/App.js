@@ -15,7 +15,7 @@ function App() {
   useEffect(() => {
     //detect the language used when starting the project to set language switcher content
     dispatch(changeLanguage(i18n.language));
-  }, []);
+  }, [dispatch, i18n]);
 
   return (
     <div>
