@@ -1,7 +1,7 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
-  language: "",
+  language: "en",
   viewType: "cardView",
 };
 
@@ -12,9 +12,12 @@ export const settingsSlice = createSlice({
     setViewType: (state, action) => {
       state.viewType = action.payload;
     },
+    changeLanguage: (state, action) => {
+      state.language = action.payload;
+    },
   },
 });
 
-export const { setViewType } = settingsSlice.actions;
+export const { setViewType, changeLanguage } = settingsSlice.actions;
 
 export default settingsSlice.reducer;
