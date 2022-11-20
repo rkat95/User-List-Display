@@ -13,6 +13,8 @@ import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import "./usersList.scss";
 import { useNavigate } from "react-router-dom";
+import { setViewType } from "../../reducers/settingsSlice";
+import RefreshIcon from "@mui/icons-material/Refresh";
 
 export function UserListComponent() {
   const dispatch = useDispatch();
@@ -24,14 +26,22 @@ export function UserListComponent() {
 
   useEffect(() => {
     if (!data?.length) {
-      dispatch(getUsersList());
+      fetchUsers();
     }
   }, [dispatch]);
 
+  const fetchUsers = () => {
+    dispatch(getUsersList());
+  };
   const goToUserDetails = (user) => {
     console.log("here");
     dispatch(setSelectedUser(user));
     navigate("/user-details");
+  };
+
+  const setHeaderIcon = (view) => {
+    console.log("here", view);
+    dispatch(setViewType(view));
   };
 
   if (status === "pending") {
@@ -62,9 +72,15 @@ export function UserListComponent() {
 
   const getIconList = () => {
     if (viewType !== "cardView") {
-      return [{ icon: AppsIcon, clickParam: "cardView" }];
+      return [
+        { icon: AppsIcon, clickParam: "cardView", clickFn: setHeaderIcon },
+        { icon: RefreshIcon, clickFn: fetchUsers },
+      ];
     }
-    return [{ icon: ReorderIcon, clickParam: "tableView" }];
+    return [
+      { icon: ReorderIcon, clickParam: "tableView", clickFn: setHeaderIcon },
+      { icon: RefreshIcon, clickFn: fetchUsers },
+    ];
   };
 
   return (

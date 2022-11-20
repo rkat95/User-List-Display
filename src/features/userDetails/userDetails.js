@@ -10,12 +10,19 @@ import Card from "@mui/material/Card";
 import Grid from "@mui/material/Grid";
 import Box from "@mui/material/Box";
 import "./userDetails.scss";
-import React from "react";
-import MapModal from "../../components/mapModal/mapModal";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function UserDetails() {
   const { selectedUser } = useSelector((state) => state.users) || {};
+  const navigate = useNavigate();
   const { t } = useTranslation();
+
+  useEffect(() => {
+    if (!Object.keys(selectedUser)?.length) {
+      navigate("/user-list");
+    }
+  });
 
   return (
     <Box className="main-container">
@@ -118,7 +125,7 @@ export default function UserDetails() {
                     }}
                   />
                 </div>
-                <div className="section-item">
+                {/* <div className="section-item">
                   {" "}
                   <InfoDisplay
                     data={{
@@ -126,7 +133,7 @@ export default function UserDetails() {
                       Icon: LocationOnIcon,
                     }}
                   />
-                </div>
+                </div> */}
               </div>
             </div>
             <Divider />
@@ -177,8 +184,6 @@ export default function UserDetails() {
                 </div>
               </div>
             </div>
-
-            <MapModal open={true} />
           </CardContent>
         </Card>
       </Grid>

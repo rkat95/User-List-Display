@@ -1,4 +1,3 @@
-import { setViewType } from "../../reducers/settingsSlice";
 import { useTranslation } from "react-i18next";
 import { Divider } from "@mui/material";
 import { useDispatch } from "react-redux";
@@ -16,10 +15,6 @@ export default function PageTitle(props) {
     subtitleParams = {},
   } = props.data;
 
-  const handleIconClick = (view) => {
-    dispatch(setViewType(view));
-  };
-
   return (
     <div className="page-header-container">
       <div className="top-container">
@@ -33,7 +28,9 @@ export default function PageTitle(props) {
             return (
               <Icon
                 className="action-icon"
-                onClick={() => handleIconClick(icon.clickParam)}
+                onClick={(event) => {
+                  icon.clickFn(icon.clickParam);
+                }}
               />
             );
           })}
