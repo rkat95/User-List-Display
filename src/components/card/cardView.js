@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import Divider from "@mui/material/Divider";
 import Card from "@mui/material/Card";
 import React from "react";
-import "./cardView.scss";
+import "./cardView";
 
 export default function CardView(props) {
   const { t } = useTranslation();
@@ -18,7 +18,12 @@ export default function CardView(props) {
     <Card className="card-container">
       <CardActionArea>
         <CardContent className="card-content">
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography
+            gutterBottom
+            variant="h5"
+            component="div"
+            data-testid="username"
+          >
             {data.username}
           </Typography>
           <InfoDisplay

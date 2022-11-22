@@ -9,7 +9,7 @@ export default function InfoDisplay(props) {
   return (
     <div className={`info-item ${!label || !value ? "center-items" : ""}`}>
       {Icon ? (
-        <div className="icon-wrapper">
+        <div className="icon-wrapper" data-testid="icon">
           <Icon className="info-icon" />
         </div>
       ) : (
@@ -17,15 +17,25 @@ export default function InfoDisplay(props) {
       )}
       <div className="text-info">
         {label ? (
-          <Typography className="label" color="text.secondary">
+          <Typography
+            data-testid="label"
+            className="label"
+            color="text.secondary"
+          >
             {t(label)}
           </Typography>
         ) : (
           ""
         )}
-        {value ? <Typography className="value">{value}</Typography> : ""}
+        {value ? (
+          <Typography data-testid="value" className="value">
+            {value}
+          </Typography>
+        ) : (
+          ""
+        )}
         {subValues?.map((val, index) => (
-          <Typography key={index} className="sub-value">
+          <Typography data-testid="sub-value" key={index} className="sub-value">
             {val}
           </Typography>
         ))}

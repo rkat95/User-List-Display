@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Error Display tests should match renderer 1`] = `
+<div
+  className="error-wrapper"
+  data-testid="error-container"
+>
+  <div
+    className="error-message"
+    data-testid="error-message"
+  >
+    Error
+  </div>
+</div>
+`;

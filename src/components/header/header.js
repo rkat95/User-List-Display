@@ -11,7 +11,7 @@ export default function Header(props) {
   return (
     <div className="header-container">
       <div className="left-container">
-        <img className="logo" alt="" src={logo} />{" "}
+        <img className="logo" alt="" src={logo} data-testid="image" />{" "}
         <div className="header-title">{t("management_system")}</div>
       </div>
       <div className="menu-items-container">

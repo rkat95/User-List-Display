@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Page Title tests should match renderer 1`] = `
+<div
+  className="page-header-container"
+>
+  <div
+    className="top-container"
+  >
+    <div
+      className="title-container"
+    >
+      <div
+        className="page-title"
+        data-testid="page-title"
+      >
+        users_display_title
+      </div>
+      <div
+        className="page-subtitle"
+        data-testid="page-subtitle"
+      >
+        users_display_subtitle
+      </div>
+    </div>
+    <div
+      className="icons-container"
+    >
+      <svg
+        aria-hidden={true}
+        className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium action-icon css-i4bv87-MuiSvgIcon-root"
+        data-testid="icon"
+        focusable="false"
+        onClick={[Function]}
+        viewBox="0 0 24 24"
+      >
+        <path
+          d="M3 15h18v-2H3v2zm0 4h18v-2H3v2zm0-8h18V9H3v2zm0-6v2h18V5H3z"
+        />
+      </svg>
+    </div>
+  </div>
+  <hr
+    className="MuiDivider-root MuiDivider-fullWidth title-divider css-9mgopn-MuiDivider-root"
+  />
+</div>
+`;

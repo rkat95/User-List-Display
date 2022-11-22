@@ -1,0 +1,393 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card View tests should match snapshot 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root card-container css-bhp9pd-MuiPaper-root-MuiCard-root"
+>
+  <button
+    className="MuiButtonBase-root MuiCardActionArea-root css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root"
+    disabled={false}
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <div
+      className="MuiCardContent-root card-content css-46bh2p-MuiCardContent-root"
+    >
+      <div
+        className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+        data-testid="username"
+      >
+        Bret
+      </div>
+      <div
+        className="info-item "
+      >
+        <div
+          className="icon-wrapper"
+          data-testid="icon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium info-icon css-i4bv87-MuiSvgIcon-root"
+            data-testid="BadgeIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 7h-5V4c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM9 12c.83 0 1.5.67 1.5 1.5S9.83 15 9 15s-1.5-.67-1.5-1.5S8.17 12 9 12zm3 6H6v-.75c0-1 2-1.5 3-1.5s3 .5 3 1.5V18zm1-9h-2V4h2v5zm5 7.5h-4V15h4v1.5zm0-3h-4V12h4v1.5z"
+            />
+          </svg>
+        </div>
+        <div
+          className="text-info"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 label css-1pnmrwp-MuiTypography-root"
+            data-testid="label"
+          >
+            name
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 value css-ahj2mt-MuiTypography-root"
+            data-testid="value"
+          >
+            Bret name
+          </p>
+        </div>
+      </div>
+      <hr
+        className="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+      />
+      <div
+        className="info-item "
+      >
+        <div
+          className="icon-wrapper"
+          data-testid="icon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium info-icon css-i4bv87-MuiSvgIcon-root"
+            data-testid="LocationOnIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+            />
+          </svg>
+        </div>
+        <div
+          className="text-info"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 label css-1pnmrwp-MuiTypography-root"
+            data-testid="label"
+          >
+            address
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 value css-ahj2mt-MuiTypography-root"
+            data-testid="value"
+          >
+            paris
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 sub-value css-ahj2mt-MuiTypography-root"
+            data-testid="sub-value"
+          >
+            7 rue
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 sub-value css-ahj2mt-MuiTypography-root"
+            data-testid="sub-value"
+          >
+            111
+          </p>
+        </div>
+      </div>
+      <hr
+        className="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+      />
+      <div
+        className="info-item "
+      >
+        <div
+          className="icon-wrapper"
+          data-testid="icon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium info-icon css-i4bv87-MuiSvgIcon-root"
+            data-testid="WorkIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+            />
+          </svg>
+        </div>
+        <div
+          className="text-info"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 label css-1pnmrwp-MuiTypography-root"
+            data-testid="label"
+          >
+            company
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 value css-ahj2mt-MuiTypography-root"
+            data-testid="value"
+          >
+            company
+          </p>
+        </div>
+      </div>
+    </div>
+    <span
+      className="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+    />
+  </button>
+  <div
+    className="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      view_details
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Error Display tests should match renderer 1`] = `
+<div
+  className="error-wrapper"
+  data-testid="error-container"
+>
+  <div
+    className="error-message"
+    data-testid="error-message"
+  >
+    Error
+  </div>
+</div>
+`;
+
+exports[`Error Display tests should match snapshot 1`] = `
+<div
+  className="MuiPaper-root MuiPaper-elevation MuiPaper-rounded MuiPaper-elevation1 MuiCard-root card-container css-bhp9pd-MuiPaper-root-MuiCard-root"
+>
+  <button
+    className="MuiButtonBase-root MuiCardActionArea-root css-b6lsxj-MuiButtonBase-root-MuiCardActionArea-root"
+    disabled={false}
+    onBlur={[Function]}
+    onContextMenu={[Function]}
+    onDragLeave={[Function]}
+    onFocus={[Function]}
+    onKeyDown={[Function]}
+    onKeyUp={[Function]}
+    onMouseDown={[Function]}
+    onMouseLeave={[Function]}
+    onMouseUp={[Function]}
+    onTouchEnd={[Function]}
+    onTouchMove={[Function]}
+    onTouchStart={[Function]}
+    tabIndex={0}
+    type="button"
+  >
+    <div
+      className="MuiCardContent-root card-content css-46bh2p-MuiCardContent-root"
+    >
+      <div
+        className="MuiTypography-root MuiTypography-h5 MuiTypography-gutterBottom css-h93ljk-MuiTypography-root"
+        data-testid="username"
+      >
+        Bret
+      </div>
+      <div
+        className="info-item "
+      >
+        <div
+          className="icon-wrapper"
+          data-testid="icon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium info-icon css-i4bv87-MuiSvgIcon-root"
+            data-testid="BadgeIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 7h-5V4c0-1.1-.9-2-2-2h-2c-1.1 0-2 .9-2 2v3H4c-1.1 0-2 .9-2 2v11c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2zM9 12c.83 0 1.5.67 1.5 1.5S9.83 15 9 15s-1.5-.67-1.5-1.5S8.17 12 9 12zm3 6H6v-.75c0-1 2-1.5 3-1.5s3 .5 3 1.5V18zm1-9h-2V4h2v5zm5 7.5h-4V15h4v1.5zm0-3h-4V12h4v1.5z"
+            />
+          </svg>
+        </div>
+        <div
+          className="text-info"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 label css-1pnmrwp-MuiTypography-root"
+            data-testid="label"
+          >
+            name
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 value css-ahj2mt-MuiTypography-root"
+            data-testid="value"
+          >
+            Bret name
+          </p>
+        </div>
+      </div>
+      <hr
+        className="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+      />
+      <div
+        className="info-item "
+      >
+        <div
+          className="icon-wrapper"
+          data-testid="icon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium info-icon css-i4bv87-MuiSvgIcon-root"
+            data-testid="LocationOnIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+            />
+          </svg>
+        </div>
+        <div
+          className="text-info"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 label css-1pnmrwp-MuiTypography-root"
+            data-testid="label"
+          >
+            address
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 value css-ahj2mt-MuiTypography-root"
+            data-testid="value"
+          >
+            paris
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 sub-value css-ahj2mt-MuiTypography-root"
+            data-testid="sub-value"
+          >
+            7 rue
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 sub-value css-ahj2mt-MuiTypography-root"
+            data-testid="sub-value"
+          >
+            111
+          </p>
+        </div>
+      </div>
+      <hr
+        className="MuiDivider-root MuiDivider-fullWidth css-9mgopn-MuiDivider-root"
+      />
+      <div
+        className="info-item "
+      >
+        <div
+          className="icon-wrapper"
+          data-testid="icon"
+        >
+          <svg
+            aria-hidden={true}
+            className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium info-icon css-i4bv87-MuiSvgIcon-root"
+            data-testid="WorkIcon"
+            focusable="false"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z"
+            />
+          </svg>
+        </div>
+        <div
+          className="text-info"
+        >
+          <p
+            className="MuiTypography-root MuiTypography-body1 label css-1pnmrwp-MuiTypography-root"
+            data-testid="label"
+          >
+            company
+          </p>
+          <p
+            className="MuiTypography-root MuiTypography-body1 value css-ahj2mt-MuiTypography-root"
+            data-testid="value"
+          >
+            company
+          </p>
+        </div>
+      </div>
+    </div>
+    <span
+      className="MuiCardActionArea-focusHighlight css-1v2exvi-MuiCardActionArea-focusHighlight"
+    />
+  </button>
+  <div
+    className="MuiCardActions-root MuiCardActions-spacing css-1t6e9jv-MuiCardActions-root"
+  >
+    <button
+      className="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-sizeSmall MuiButton-textSizeSmall css-1knaqv7-MuiButtonBase-root-MuiButton-root"
+      disabled={false}
+      onBlur={[Function]}
+      onContextMenu={[Function]}
+      onDragLeave={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex={0}
+      type="button"
+    >
+      view_details
+    </button>
+  </div>
+</div>
+`;

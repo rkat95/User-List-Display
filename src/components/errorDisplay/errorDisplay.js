@@ -1,5 +1,5 @@
 import React from "react";
-import "./errorDisplay.scss";
+import "./errorDisplay";
 import { useTranslation } from "react-i18next";
 
 export default function ErrorDisplay(props) {
@@ -7,8 +7,10 @@ export default function ErrorDisplay(props) {
   const { t } = useTranslation();
 
   return (
-    <div className="error-wrapper">
-      <div className="error-message">{t(errorMessage)}</div>
+    <div data-testid="error-container" className="error-wrapper">
+      <div data-testid="error-message" className="error-message">
+        {t(errorMessage)}
+      </div>
     </div>
   );
 }

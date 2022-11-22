@@ -17,14 +17,19 @@ export default function PageTitle(props) {
     <div className="page-header-container">
       <div className="top-container">
         <div className="title-container">
-          <div className="page-title">{t(title)}</div>
-          <div className="page-subtitle">{t(subtitle, subtitleParams)}</div>
+          <div className="page-title" data-testid="page-title">
+            {t(title)}
+          </div>
+          <div className="page-subtitle" data-testid="page-subtitle">
+            {t(subtitle, subtitleParams)}
+          </div>
         </div>
         <div className="icons-container">
           {icons.map((icon, index) => {
             const Icon = icon.icon;
             return (
               <Icon
+                data-testid="icon"
                 key={index}
                 className="action-icon"
                 onClick={(event) => {
