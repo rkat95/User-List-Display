@@ -11,9 +11,21 @@ function RouterOutlet() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Navigate to="/user-list" />} />
-        <Route exact path="/user-list" element={<UserListComponent />} />
-        <Route exact path="/user-details" element={<UserDetails />} />
+        <Route
+          exact
+          path="/"
+          element={<Navigate to="/User-Display-List/user-list" />}
+        />
+        <Route
+          exact
+          path="/User-Display-List/user-list"
+          element={<UserListComponent />}
+        />
+        <Route
+          exact
+          path="/User-Display-List/user-details"
+          element={<UserDetails />}
+        />
         <Route path="*" element={<Navigate to="/user-list" />} />
       </Routes>
     </Router>
