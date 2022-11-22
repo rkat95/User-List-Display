@@ -33,7 +33,7 @@ export default function TableView(props) {
 
   const onRowClicked = (event) => {
     dispatch(setSelectedUser(event.data));
-    navigate("/user-details");
+    navigate("/User-Display-List/user-details");
   };
 
   const onGridReady = () => {
