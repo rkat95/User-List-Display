@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 import Select from "@mui/material/Select";
 import { useDispatch } from "react-redux";
 import Box from "@mui/material/Box";
-import "./languageSwitcher.scss";
+import "./languageSwitcher";
 import React from "react";
 
 export default function LanguageSwitcher(props) {
