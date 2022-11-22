@@ -35,7 +35,7 @@ export function UserListComponent() {
   };
   const goToUserDetails = (user) => {
     dispatch(setSelectedUser(user));
-    navigate("/user-details");
+    navigate("/User-Display-List/user-details");
   };
 
   const setHeaderIcon = (view) => {

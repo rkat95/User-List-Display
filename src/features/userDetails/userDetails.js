@@ -23,12 +23,12 @@ export default function UserDetails() {
 
   useEffect(() => {
     if (!Object.keys(selectedUser)?.length) {
-      navigate("/user-list");
+      navigate("/User-Display-List/user-list");
     }
   });
 
   const goBack = () => {
-    navigate("/user-list");
+    navigate("/User-Display-List/user-list");
   };
 
   const handleDialogClose = () => {
