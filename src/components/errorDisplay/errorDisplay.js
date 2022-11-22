@@ -1,5 +1,5 @@
 import React from "react";
-import "./errorDisplay";
+import "./errorDisplay.scss";
 import { useTranslation } from "react-i18next";
 
 export default function ErrorDisplay(props) {

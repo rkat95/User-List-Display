@@ -9,7 +9,7 @@ import { useTranslation } from "react-i18next";
 import Divider from "@mui/material/Divider";
 import Card from "@mui/material/Card";
 import React from "react";
-import "./cardView";
+import "./cardView.scss";
 
 export default function CardView(props) {
   const { t } = useTranslation();

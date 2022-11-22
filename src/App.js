@@ -6,6 +6,7 @@ import { useDispatch } from "react-redux";
 import React, { useEffect } from "react";
 import "./assets/localization/i18n";
 import RouterOutlet from "./Routes";
+import "./index.scss";
 
 function App() {
   const { i18n } = useTranslation();
