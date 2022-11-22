@@ -26,7 +26,10 @@ function RouterOutlet() {
           path="/User-Display-List/user-details"
           element={<UserDetails />}
         />
-        <Route path="*" element={<Navigate to="/user-list" />} />
+        <Route
+          path="*"
+          element={<Navigate to="/User-Display-List/user-list" />}
+        />
       </Routes>
     </Router>
   );
